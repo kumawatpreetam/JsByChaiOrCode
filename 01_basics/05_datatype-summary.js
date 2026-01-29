@@ -40,3 +40,50 @@ const myFunctiion = function () {
 console.log(typeof myFunctiion);
 
 console.log(typeof bigNumber);
+
+//+++++++++++++++++++++
+
+// Stack (Primitive) [In Stack we work on copy of a variable and other data it give copy],
+// Heap (Non-Primitive) [In Heap we work on real variable and other data it give referance]
+
+let myYoutubename = "preetamkumawat";
+let anotherName = myYoutubename;
+anotherName = "chaiorcode";
+console.log(myYoutubename);
+console.log(anotherName);
+
+let userOne = {
+  email: "preetamkumawat002@gmail.com",
+  upi: "user@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "kumawatpreet@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
+
+/*
+
+---------------            ------------------------------
+-             -            -                            -
+-             -            -                            -
+---------------            -                            - 
+---------------            -                            -
+-             -            -                            -
+-             -            -                            -
+---------------            ------------------------------
+                                     heap
+---------------
+-             -
+-             -
+---------------
+---------------
+-myYoutubename -
+-             -
+---------------
+
+stack
+
+
+*/
