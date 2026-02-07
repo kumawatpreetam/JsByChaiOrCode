@@ -53,3 +53,5 @@ console.log(((3 + 4) * 5) % 3);
 console.log(true);
 console.log(+true);
 console.log(+"");
+
+console.log("10" - 2);
