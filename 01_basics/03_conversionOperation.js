@@ -55,7 +55,10 @@ console.log(true);
 console.log(+true);
 console.log(+"");
 
+console.log("10" - 2); // 8 (Math)
+console.log("5" * "2"); // 10
 
+console.log("10" + 2); // "52" (Text joining)
 
 
 

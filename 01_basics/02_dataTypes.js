@@ -9,6 +9,8 @@ let name = "Preetam"; //String DataTypes
 let age = 21; //Number
 
 let isLogin = true; //Boolean
+console.log(typeof (isLogin));
+
 
 let state;
 
