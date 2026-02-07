@@ -55,3 +55,8 @@ console.log(+true);
 console.log(+"");
 
 console.log("10" - 2);
+
+let strNum = "50.10";
+let orgNum = parseInt(strNum);
+
+console.log(orgNum);
