@@ -37,3 +37,39 @@ console.log(url.replace("%20", "-")); //It replace %20 with -
 
 console.log(url.includes("preet")); //It find it is in string or not
 console.log(url.includes("preeeeeeeeeeeeeeeeeee"));
+
+console.dir(String.prototype); //By using it we can see all function and methods in console
+
+// slice()
+
+let sliceName = "Preetam Kumawat";
+
+let sliceStr = sliceName.slice(0, 8);
+
+console.log(sliceStr);
+
+// substring()
+
+let subStr = "Preetam, Kumawat, Kumar";
+
+let subStrr = subStr.substring(6, 11);
+
+console.log(subStrr);
+
+//substr()
+
+let str = "preetamKumawat";
+
+let part = str.substr(6, 5);
+
+console.log(part);
+
+//replace()
+
+let reStr = "Preetam, Kumawat";
+let reOut = reStr.replace("Kumawat", "Daksh");
+console.log(reOut);
+
+let preetName = "preetampreetampreetam";
+// Split string on 't'.
+console.log(preetName.split("t"));

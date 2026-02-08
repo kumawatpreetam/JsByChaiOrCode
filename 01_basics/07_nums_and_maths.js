@@ -5,7 +5,7 @@ const balance = new Number(100);
 console.log(balance);
 
 console.log(balance.toString().length);
-console.log(balance.toFixed(2));
+console.log(balance.toFixed(3)); //By using it we can show zeros after points By passing value in method
 
 const otherNumber = 23.8966;
 
