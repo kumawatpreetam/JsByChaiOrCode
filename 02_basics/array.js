@@ -44,3 +44,29 @@ console.log(myArr);
 
 console.log(newArr);
 console.log(typeof newArr);
+
+//Slice,Splice
+
+//Slice()
+
+//The slice() method in JavaScript extracts a section of an array and returns a new array containing the selected elements, without modifying the original array.Last passing index can't added
+
+console.log("A ", myArray);
+
+const myn1 = myArray.slice(1, 3);
+
+console.log("Slice", myn1);
+
+console.log("B ", myArray);
+
+//Splice()
+
+// The splice() method in JavaScript is used to change the contents of an array by removing or replacing existing elements and/or adding new elements in place, modifying the original array.Last passing index is added
+
+console.log("C ", myArray);
+
+let myn2 = myArray.splice(1, 3);
+
+console.log("Splice", myn2);
+
+console.log("D ", myArray);
