@@ -38,7 +38,8 @@ console.log(result2);
 //Imp for Interview
 
 function loginUserMessage(userName = "Preet") {
-  //Here preet is default value it execuate whene we can't pass any argument
+  //Here preet is default value it execuate whene we can't pass any argument 3
+
   return `${userName} just logged in`;
 }
 
