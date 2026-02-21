@@ -49,3 +49,5 @@ console.log(loginUserMessage("Preetam"));
 
 console.log(loginUserMessage(""));
 console.log(loginUserMessage());
+
+// functionCalculateCartPrice
