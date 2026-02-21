@@ -51,3 +51,48 @@ console.log(loginUserMessage(""));
 console.log(loginUserMessage());
 
 // functionCalculateCartPrice
+
+//DayTowCode
+
+console.log("DayTwoCode");
+
+function calculateCartPrice(...num1) {
+  return num1;
+}
+
+console.log(calculateCartPrice(2, 4, 8, 6));
+
+//SecondFunction.....
+
+function calculateAnother(val1, val2, ...num1) {
+  return num1;
+}
+
+console.log(calculateAnother(100, 200, 300, 400));
+
+//How to pass object in a function
+
+const user = {
+  username: "Preetam",
+  price: 199,
+};
+
+function handelObject(anyobject) {
+  console.log(
+    `Username is ${anyobject.username} and price is ${anyobject.price}`,
+  );
+}
+
+handelObject(user);
+
+//Parameters name and Arguments name are differant
+
+//How to pass Array in a function
+
+const myNewArray = [200, 300, 500, 900];
+
+function returnSecondValue(getArray) {
+  return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
