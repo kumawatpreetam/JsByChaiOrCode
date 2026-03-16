@@ -3,7 +3,7 @@
 // ["","", "",""]
 //[{},{},{}]
 
-const arr = [1, 2, 3, 4]
+const arr = [1, 2, 3, 4];
 
 // for (const element of object) {
 
@@ -12,15 +12,13 @@ const arr = [1, 2, 3, 4]
 // Here Object means on what thing/object you apply lopps to iterate like Array,String,Object etc.
 
 for (const element of arr) {
-    console.log(element);
-
+  console.log(element);
 }
 
-const greeting = "Preetam Kumawat"
+const greeting = "Preetam Kumawat";
 
 for (const greet of greeting) {
-    console.log(`Each Character is ${greet}`);
-
+  console.log(`Each Character is ${greet}`);
 }
 
 // const myObj = {
@@ -34,4 +32,3 @@ for (const greet of greeting) {
 // }
 
 // the for...of loop is not directly applicable to objects in JavaScript.
-
