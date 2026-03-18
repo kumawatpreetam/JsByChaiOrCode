@@ -51,5 +51,9 @@ const myCoding = [
 ];
 
 myCoding.forEach((item) => {
+  console.log(item);
+});
+
+myCoding.forEach((item) => {
   console.log(item.languagefilename);
 });
