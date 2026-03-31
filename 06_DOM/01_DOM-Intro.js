@@ -59,11 +59,11 @@ document.getElementById("firstHeading").innerHTML = "<h1>Kumawat Preetam </h1>";
 
 /* QuerieSelectors */
 
-document.querySelector("h2");
+document.querySelector("h2"); //usingTagName
 
-document.querySelector("#firstHeading");
+document.querySelector("#firstHeading"); //UsingIdName
 
-document.querySelector(".heading");
+document.querySelector(".heading"); //usingClassName
 
 document.querySelector('input[type="password"]');
 
@@ -119,3 +119,5 @@ Array.from(tempList)
 (4) [li.list-item, li.list-item, li.list-item, li.list-item]
 
 */
+
+console.log(document);

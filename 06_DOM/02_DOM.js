@@ -38,3 +38,5 @@ console.log(dayOne);
 console.log(dayOne.parentElement); // It return Parent Element of Child Element
 
 console.log(dayOne.nextElementSibling); // It return next Element of first element children
+
+console.log("NODES: ", parent.childNodes);
