@@ -14,7 +14,7 @@ console.log(document.links[2]);
 
 document.getElementById("firstHeading");
 
-document.getElementById("firstHeading").innerHTML;
+document.getElementById("firstHeading").innerHTML; //return inner text of firstHeading ID
 
 document.getElementById("firstHeading").innerHTML = "<h1>Kumawat Preetam </h1>";
 
