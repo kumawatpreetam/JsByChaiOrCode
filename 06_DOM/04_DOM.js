@@ -18,7 +18,7 @@ function addOptiLanguage(langName) {
 
 //Edit
 
-const secondLang = document.querySelector("li:nth-child(2");
+const secondLang = document.querySelector("li:nth-child(2)");
 // secondLang.innerHTML = "Mojo";
 const newLi = document.createElement("li");
 newLi.textContent = "Mojo";
