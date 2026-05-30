@@ -40,7 +40,7 @@ promiseThree.then(function (user) {
 
 const promiseFour = new Promise(function (resolve, reject) {
   setTimeout(function () {
-    let error = true;
+    let error = false;
     if (!error) {
       resolve({ username: "kumawatpreetam", password: 123 });
     } else {
@@ -49,4 +49,63 @@ const promiseFour = new Promise(function (resolve, reject) {
   }, 1000);
 });
 
-promiseFour.then().catch();
+promiseFour
+  .then((user) => {
+    console.log(user);
+    return user.username;
+  })
+  .then((username) => {
+    console.log(username);
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally(() => {
+    console.log("The Promise is either resolved or rejected");
+  });
+
+//PromiseFive
+
+const promiseFive = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = true;
+    if (!error) {
+      resolve({ username: "javascript", password: 123 });
+    } else {
+      reject("Error:Js went Wrong");
+    }
+  }, 1000);
+});
+
+async function consumePromiseFive() {
+  try {
+    const response = await promiseFive;
+    console.log("response");
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+consumePromiseFive();
+
+/*
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://api.github.com/users/kumawatpreetam");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("E: ", error);
+  }
+}
+
+getAllUsers();
+*/
+
+fetch("https://api.github.com/users/kumawatpreetam")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => console.log(data))
+
+  .catch((error) => console.log(error));
